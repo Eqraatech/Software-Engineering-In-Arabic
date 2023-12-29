@@ -1,6 +1,6 @@
 <div style="direction: rtl;">
 <p>
-  <a href="https://eqraatech.com/"><img src="images/eqraatech-cover.png" /> </a>
+  <a href="https://eqraatech.com/"><img src="images/eqraatech-banner.png" /> </a>
 </p>
 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/eqraatechcom/)
