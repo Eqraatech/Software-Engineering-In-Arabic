@@ -11,6 +11,10 @@
 # ورقة وقلم
 محتوى تقني متميز في مختلف مجالات هندسة البرمجيات عن طريق تبسيط المفاهيم البرمجية المعقدة بشكل سلس وباستخدام صور توضيحية مذهلة
 
+<p>
+  <img src="images/in-a-nutshell.webp" style="width: 640px">
+</p>
+
 # فهرس المواضيع
 
 - [Authentication and Authorization](#authentication-and-authorization)
