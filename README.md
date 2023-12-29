@@ -33,9 +33,18 @@
   - [Database Cheatsheet for System Design](#database-cheatsheet-for-system-design)
 - [Security](#security)
   - [Json Web Token](#json-web-token)
+- [Networks and Communication Protocols](#networks-and-communication-protocols)
+  - [URL Explanation](#url-explanation)
+  - [How DNS Works](#how-dns-works)
+  - [APIs](#apis)
+  - [HTTP Status Codes](#http-status-codes)
+  - [RESTful APIs Vs GraphQL](#restful-apis-vs-graphql)
+- [DevOps](#devops)
+  - [Infrastructure as a Code](#infrastructure-as-a-code)
 - [Version Control](#version-control)
   - [Introduction Into Version Control](#introduction-into-version-control)
   - [5 Takeaways for README File](#5-takeaways-for-readme-file)
+  - [Git Commit Message Cheatsheet](#git-commit-message-cheatsheet)
 - [Agile](#agile)
   - [Agile Method](#agile-method)
   - [Estimated Time for Task](#estimated-time-for-task)
@@ -660,6 +669,99 @@
 2. بنستخدم أوامر بسيطة للتحكم في العملية دي.
 
 نظم إدارة النسخ “جوكر” في حياتك كمبرمج ولا غنى عنها فبنشجعكم على فهمها بشكل عميق.
+
+### Git Comit Message Cheatsheet
+
+<p>
+  <img src="images/git-commit-message-cheatsheet.png" style="width: 640px">
+</p>
+
+بعد كل تغيير بتحب تسجله علي ال Version Control اللي عليه المشروع الخاص بيك بتحتاج تكتب رسالة , الرسالة دي بتوضح ايه التغيير اللي أنت عملته في الكود  اللي أنت حاليا بترفعه علي Version Controlو كتير مننا بيتجاهل إنه يكتب الرسالة بشكل واضح يسهل عليه وعلي اللي بعده إنه يفهم من عنوان الرساله إيه اللي اتغير في الكود.
+
+خلينا نقولك بسرعة على كلمات تقدر تبتدي بيها رسالتك، علشان تسهل عليك وتفهم اللي بعدك إيه اللي اتغير:
+
+**الـ Git Commit Messages**
+
+1. الـ Feat:
+
+بمعني”ميزة”، هي اختصار لكلمة “Feature”. من اسمها، استخدمها إذا كنت قد قمت بإضافة ميزة جديدة للمشروع.
+
+```bash
+git commit -m 'feat: Add user profile picture upload functionality'
+```
+
+2. الـ Fix
+بمعني”إصلاح”. ابدأ رسالتك بها إذا كانت التغييرات التي قمت بها تحل مشكلة في الكود.
+
+```bash
+git commit -m 'fix: Resolve issue with login button not responding'
+```
+
+3. الـ Chore
+ومعناها عمل روتيني , و دي  ابدأ بيها إذا كانت التغييرات غير أساسية، مثل التحديثات الروتينية.
+
+```bash
+git commit -m 'chore: Update project dependencies'
+```
+
+4. الـ Refactor
+استخدمها إذا كنت قد قمت بتحسين الكود بدون إضافة ميزة جديدة أو حل مشكلة.
+
+```bash
+git commit -m 'refactor: Improve code readability in authentication module'
+```
+
+5. الـ Docs
+استخدمها إذا قمت بتحديث وثائق المشروع، مثل تعديل ملف readme.
+
+```bash
+git commit -m 'docs: Update README with installation instructions'
+```
+
+6. الـ Style
+إذا كانت التغييرات تؤثر على مظهر الكود، مثل تنسيقه (Formatting)
+
+```bash
+git commit -m 'style: Format code according to coding guidelines'
+```
+
+7. الـ Test
+إذا كانت التغييرات تتعلق باختبار وتجربة المشروع سواءً باضافة أو تعديل اي Test لمشروعك
+
+```bash
+git commit -m 'test: Add unit tests for user authentication'
+```
+
+8. الـ Perf
+اختصار لكلمة “performance”  استخدمها إذا كانت التغييرات بتحسن من أداء الكود.
+
+```bash
+git commit -m 'perf: Optimize database queries for faster user retrieval'
+```
+
+9. الـ Build
+التغييرات تؤثر على “Build System” الخاص بمشروعك.
+
+```bash
+git commit -m 'build: Update build process to include new dependencies'
+```
+
+10. الـ Revert
+استخدمها لو تغييرك هو مجرد رجوع إلى نسخة سابقة من الكود.
+
+```bash
+git commit -m 'revert: Revert previous commit that caused issues'
+```
+
+11. الـ CI
+إذا كانت التغييرات تتعلق “Continues Integration” الخاص بمشروعك.
+
+```bash
+git commit -m 'ci: Integrate automated testing into continuous integration pipeline'
+```
+
+كتابة Commit Messages هي واحده من المهارات الحيويه لأي مطور برمجيات , هي أكثر من مجرد تعليق , وإنما هي سجل للتغييرات في مشروعك اللي بتخليك تقدر تتابع تقدم المشروع  وتسهل عليك وعلي باقي الفريق مراجعة الكود ومراجعة التعديلات 
+
 
 
 
