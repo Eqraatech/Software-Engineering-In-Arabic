@@ -8,14 +8,14 @@
 
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Eqraatechcom)](https://twitter.com/Eqraatechcom)
 
-# ورقة وقلم
+# ورقة وقلم 🚀
 محتوى تقني متميز في مختلف مجالات هندسة البرمجيات عن طريق تبسيط المفاهيم البرمجية المعقدة بشكل سلس وباستخدام صور توضيحية مذهلة
 
 <p>
   <img src="images/in-a-nutshell.webp" style="width: 640px">
 </p>
 
-# فهرس المواضيع
+# فهرس المواضيع 🌠
 
 - [Authentication and Authorization](#authentication-and-authorization)
   - [Json Web Token](#json-web-token)
