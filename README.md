@@ -34,6 +34,8 @@
 - [Security](#security)
   - [Json Web Token](#json-web-token)
   - [How to Store Passwords In Databases](#how-to-store-passwords-in-databases)
+- [Databases](#databases)
+  - [Optimistic Locking](#optimistic-locking)
 - [Networks and Communication Protocols](#networks-and-communication-protocols)
   - [URL Explanation](#url-explanation)
   - [What is DNS](#what-is-dns)
@@ -671,6 +673,58 @@
 
 لما الـ User بيجي يكتب الـ Password ، بنروح نجيب الـ Salt اللي اتزود على الـ Password بتاعه من الـ Database ونزوده على الـ User Password اللي كتبه ونعملهم Hashing مع بعض ونقارن الـ Hashed Combination ده مع اللي موجود في الـ Database لو طلعوا زي بعض ، اذن الـ Password سليم.
 
+## Databases
+
+قواعد البيانات (Databases) تشكل عنصراً أساسياً في عالم تكنولوجيا المعلومات، حيث تلعب دوراً حاسماً في تنظيم وتخزين البيانات بشكل فعّال. تعد البيانات من أهم الموارد في المؤسسات والمشاريع، وباستخدام قواعد البيانات يمكن تحسين إدارة هذه البيانات بشكل متقدم وفعّال.
+
+### Optimistic Locking
+
+<p>
+  <img src="images/optimistic-locking.png" style="width: 640px">
+</p>
+
+يعتبر الـ Locking  من أهم الآليات اللي بنعتمد عليها في الـ Databases بشكل أساسي عشان نتحكم في الـ Concurrent Access للبيانات من خلال أكثر من Transactions، فلو كان هناك عدد من الـ Transactions بيحاول يوصل للبيانات دي في نفس الوقت فأكيد هيحصل نتيجة لده تضارب بنسميه Conflicts.
+
+نقدر نتخيل الـ Locking كأنه زي القفل اللي بنقفل بيه على أي حاجة عشان نمنع أي حد من الوصول ليها. فالـ Databases أحيانًا بتحط قفل على الـ Row أو الـ Record لما يكون فيه Transaction شغال عليه عشان تمنع أي حد من الوصول للـ Row ده, اكنه دخل (الحمام وقفل وراه الباب) .. 
+
+**طب هو ليه اصلا بنحتاج للـ Locking ؟**
+
+احنا بنحتاج للـ Locking لإنه بيقدملنا فوايد مهمة زي الـ Data Integrity & Data Consistency ودول من أهم الفوايد اللي بنحصل عليها من الـ Locking .. لإنه من غير Locking ممكن Two Concurrent Transactions يغيروا في قيمة الـ Column الواحد في نفس الوقت وده يسبب مشاكل كتير. 
+
+وعلى الرغم من فوايد الـ Locking الا انه بيجي مع تحديات كبيرة وتعقيدات في التعامل معاه، فلازم نكون فاهمينه عشان نقدر نتعامل معاه بشكل فعال.
+
+<ins>
+فيه نوعين من الـ Locking وهم الـ Optimistic Locking والـ Pessimistic Locking بس احنا هنتكلم النهاردة عن الـ Optimistic. 
+</ins>
+
+**ايه هو الـ Optimistic Locking ؟**
+
+الـ Optimistic Locking جاي من اسمه انه شخص متفائل، مبيفكرش في المشكلة الا لما تحصل ومبيشغلش باله، ولما تحصل مشكلة يبدأ يشوف هيتصرف ويحلها ازاي. 
+
+الـ Optimistic Locking دوره انه يمنع الـ Conflicts بين الـ Transactions واللي بنسبة كبيرة بتحصل نتيجة عملية الـ Concurrent Update فلما يكون فيه Transaction بيحاول يعمل Update لقيمة Row معين هنا هيجي الـ Optimistic Locking ويزود بعض البيانات الإضافية Metadata زي الـ Version أو الـ Timestamp
+
+**طب ليه بيضيف بيانات اضافية ؟**
+
+ عشان لو فيه Transaction تاني حاول يغير من قيمة نفس الـ Row هيعمل وقتها Check على الـ Version Number أو الـ Timestamp ولو كان مختلف فهيعرف وقتها انه فيه Transaction بيحاول يغير في الـ Row أثناء مالـ Transaction الأول بيغير فيها وده بسبب اختلاف قيم الـ Version Number أو الـ Timestamp. 
+
+فالخلاصة أن الـ Optimistic Locking بيشتغل على فرضية انه مفيش Conflicts هتحصل ، ولما بيحصل Conflict بيبدأ يـ Check ويتعامل معاه. 
+
+**امتة نستخدم الـ Optimistic Locking ؟**
+
+يفضل استخدامه في النظم اللي بطبيعتها مش هيحصل فيها Conflicts بشكل كبير, واللي غالبًا عمليات الـ Update فيها بتحصل بشكل طفيف. 
+
+**مميزات الـ Optimistic Locking  ؟**
+
+1. هو نظام فعال جدًا في الـ Systems اللي بيكون فيها عمليات Concurrent Updates محدودة. 
+2. ممكن نتجنب وضع الـ Locking على الـ Row أو الـ Record وده هيساعد بنسبة كبيرة للاستجابة للـ Queries بشكل أسرع
+3. بيساعد في تحقيق الـ Scalability بسهولة خصوصًا مع الكميات الكبيرة من البيانات
+
+**عيوب الـ Optimistic Locking ؟**
+
+1. لو الـ System بطبيعته بيحصل فيه Concurrent Updates فده هيسبب مشاكل في الـ Data Consistency وممكن يسبب أخطاء في البيانات. 
+2. استخدام تقنية الـ Versioning هيزيد من التعقيدات في التعامل مع البيانات.
+
+بشكل عام، ممكن نقول أن Optimistic Locking يعتبر مناسبًا للـ Systems التي بتتطلب Concurrent Updates محدودة!
 
 
 ## Networks and Communication Protocols
