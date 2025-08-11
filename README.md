@@ -12,14 +12,6 @@
   [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/mahyoussef)
   [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/mahyoussef97)
 
-  
-# ورقة وقلم 🚀
-محتوى تقني متميز في مختلف مجالات هندسة البرمجيات عن طريق تبسيط المفاهيم البرمجية المعقدة بشكل سلس وباستخدام صور توضيحية مذهلة
-
-<p>
-  <img src="images/pen-paper.png" style="width: 640px">
-</p>
-
 # فهرس المواضيع 🌠
 - [AI Machine Learning](#ai-machine-learning)
   - [AI vs. Machine Learning vs. Deep Learning](#ai-vs-machine-learning-vs-deep-learning)
