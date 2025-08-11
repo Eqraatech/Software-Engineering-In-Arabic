@@ -5,11 +5,11 @@ excerpt: "كلنا عارفين إن Redis واحدة من أسرع الـ Key-V
 tags: ["redis", "caching", "persistence", "database", "performance"]
 updatedAt: "2025-07-04"
 featured: true
-image: "https://assets.eqraatech.com/guides/caching-performance.png"
+image: "https://assets.eqraatech.com/guides/redis-persistence.png"
 author: mahyoussef
 ---
 
-<img src="https://assets.eqraatech.com/guides/caching-performance.png" alt="Redis Caching and Persistence Strategies infographic" ondragstart="return false;" oncontextmenu="return false;" style="display: block; margin: 2rem auto; border-radius: 1rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);" />
+<img src="https://assets.eqraatech.com/guides/redis-persistence.png" alt="Redis Caching and Persistence Strategies infographic" ondragstart="return false;" oncontextmenu="return false;" style="display: block; margin: 2rem auto; border-radius: 1rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);" />
 
 كلنا عارفين إن `Redis` واحدة من أسرع الـ `Key-Value` Stores اللي موجودة في الساحة، وأكتر استعمالتها بيكون في الـ Caching وعشان كده أكيد جه في دماغ أي حد بيستخدمها سؤال مهم: لو حصل crash للسيرفر، إيه اللي هيحصل للداتا؟
 
