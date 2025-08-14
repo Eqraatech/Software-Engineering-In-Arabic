@@ -1,3 +1,5 @@
+[![MSeeP.ai Security Assessment Badge](https://mseep.net/pr/eqraatech-software-engineering-in-arabic-badge.png)](https://mseep.ai/app/eqraatech-software-engineering-in-arabic)
+
 <div style="direction: rtl;">
 <p>
   <a href="https://eqraatech.com/"><img src="images/guides-banner1.png" /> </a>
