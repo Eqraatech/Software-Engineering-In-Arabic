@@ -67,8 +67,12 @@
   - [Process Management](#process-management)
   - [Process Scheduling](#process-scheduling)
   - [Program vs Process vs Thread](#program-vs-process-vs-thread)
-- [Payment Fintech](#payment-fintech)
+- [Payment & Fintech](#payment-fintech)
   - [How to Avoid Double Payments](#how-to-avoid-double-payments)
+  - [How Online Payments Work] (#how-online-payments-work)
+  - [Credit & Debit Cards Explained] (#credit-debit-cards-explained)
+  - [Luhn Algorithm Explained] (#luhn-algorithm-explained)
+  - [3DS Challenge in Online Payments] (#3ds-challenge-in-online-payments)
 - [Software Architecture](#software-architecture)
   - [CQRS Architecture Pattern](#cqrs-architecture-pattern)
   - [Layered Architecture](#layered-architecture)
@@ -480,7 +484,7 @@
 ---
 
 
-## Payment Fintech
+## Payment & Fintech
 
 ### How to Avoid Double Payments
 أحد أكبر المشاكل اللي ممكن نواجهها في تصميم الأنظمة الخاصة بالدفع , والمعاملات المالية هي أنك تدفع العميل أكتر من مرة, وعشان كده واحنا بنصمم Payment System محتاجين ناخد في الاعتبار ان عملية الدفع لازم نضمن انها هتتم مرة واحدة فقط لا غير.
@@ -489,6 +493,33 @@
 
 ---
 
+### How Online Payments Work
+واحدة من أكثر المجالات صعودًا في السنين الأخيرة في عالم التقنية هي ال Fintech بل وأصبحت لا غني عنها وجزء من حياتنا اليومية, وأي Business حاليًا لازم يتعامل معها بطريقة أو بأخرى, فورقة وقلم مًبرمجنا الفاضل وتعالى نفهم أساس النظام دا من وجهة نظر العميل ووجهة النظر التقنية.
+
+📄 **[اقرأ المقال](guides/payment-fintech/how-online-payments-work.md)**
+
+---
+
+### Credit & Debit Cards Explained
+بطاقات الدفع جزء من حياتنا اليومية ومع الوقت بيزيد احتياجنا لفهمها كمبرمجين لأنها من أكثر وسائل الدفع انتشارًا وأغلب التطبيقات بتدعمها لتسهيل عملية الدفع لمستخدميها, ورقة وقلم وتعالوا نعرف كل التفاصيل عن الجانب التقني منها.
+
+📄 **[اقرأ المقال](guides/payment-fintech/credit-debit-cards-explained.md)**
+
+---
+
+### Luhn Algorithm Explained
+خوارزمية Luhn هي طريقة بسيطة للتحقق من صحة أرقام البطاقات زي بطاقات الائتمان. بتشتغل عن طريق حساب Checksum وتتأكد إن الرقم صالح أو لأ. في الدليل ده هنعرف إزاي بتشتغل وليه بتستخدم، مع مثال عملي للتوضيح.
+
+📄 **[اقرأ المقال](guides/payment-fintech/luhn-algorithm-explained.md)**
+
+---
+
+### 3DS Challenge in Online Payments
+لو سبق لك الدفع ببطاقتك البنكية عبر الإنترنت، فغالبًا قابلت خطوة بيظهر فيها طلب إدخال رمز OTP المرسل من البنك لتأكيد العملية. هذه الخطوة تُعرف باسم 3DS Challenge، وهي واحدة من أهم الإجراءات الأمنية في عمليات الدفع الإلكتروني.
+
+📄 **[اقرأ المقال](guides/payment-fintech/3ds-challenge-in-online-payments.md)**
+
+---
 
 ## Software Architecture
 
