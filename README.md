@@ -67,10 +67,10 @@
   - [Process Management](#process-management)
   - [Process Scheduling](#process-scheduling)
   - [Program vs Process vs Thread](#program-vs-process-vs-thread)
-- [Payment & Fintech](#payment-fintech)
+- [Payment Fintech](#payment-fintech)
   - [How to Avoid Double Payments](#how-to-avoid-double-payments)
   - [How Online Payments Work](#how-online-payments-work)
-  - [Credit & Debit Cards Explained](#credit-debit-cards-explained)
+  - [Credi Debit Cards Explained](#credit-debit-cards-explained)
   - [Luhn Algorithm Explained](#luhn-algorithm-explained)
   - [3DS Challenge in Online Payments](#3ds-challenge-in-online-payments)
 - [Software Architecture](#software-architecture)
@@ -484,7 +484,7 @@
 ---
 
 
-## Payment & Fintech
+## Payment Fintech
 
 ### How to Avoid Double Payments
 أحد أكبر المشاكل اللي ممكن نواجهها في تصميم الأنظمة الخاصة بالدفع , والمعاملات المالية هي أنك تدفع العميل أكتر من مرة, وعشان كده واحنا بنصمم Payment System محتاجين ناخد في الاعتبار ان عملية الدفع لازم نضمن انها هتتم مرة واحدة فقط لا غير.
@@ -500,7 +500,7 @@
 
 ---
 
-### Credit & Debit Cards Explained
+### Credit Debit Cards Explained
 بطاقات الدفع جزء من حياتنا اليومية ومع الوقت بيزيد احتياجنا لفهمها كمبرمجين لأنها من أكثر وسائل الدفع انتشارًا وأغلب التطبيقات بتدعمها لتسهيل عملية الدفع لمستخدميها, ورقة وقلم وتعالوا نعرف كل التفاصيل عن الجانب التقني منها.
 
 📄 **[اقرأ المقال](guides/payment-fintech/credit-debit-cards-explained.md)**
