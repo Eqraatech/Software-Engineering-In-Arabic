@@ -73,6 +73,7 @@
   - [Credi Debit Cards Explained](#credit-debit-cards-explained)
   - [Luhn Algorithm Explained](#luhn-algorithm-explained)
   - [3DS Challenge in Online Payments](#3ds-challenge-in-online-payments)
+  - [Payment Fees Explained](#payment-fees-explained)
 - [Software Architecture](#software-architecture)
   - [CQRS Architecture Pattern](#cqrs-architecture-pattern)
   - [Layered Architecture](#layered-architecture)
@@ -518,6 +519,15 @@
 لو سبق لك الدفع ببطاقتك البنكية عبر الإنترنت، فغالبًا قابلت خطوة بيظهر فيها طلب إدخال رمز OTP المرسل من البنك لتأكيد العملية. هذه الخطوة تُعرف باسم 3DS Challenge، وهي واحدة من أهم الإجراءات الأمنية في عمليات الدفع الإلكتروني.
 
 📄 **[اقرأ المقال](guides/payment-fintech/3ds-challenge-in-online-payments.md)**
+
+---
+
+### Payment Fees Explained
+عند إجراء عملية دفع إلكتروني أو عبر نقاط البيع، المبلغ يمر بعدة أطراف، وكل طرف يخصم جزءًا من الرسوم مقابل خدمته ودوره في إتمام العملية. هذه الرسوم موزعة بين بنك العميل، شبكة البطاقات، بنك التاجر، وأحيانًا بوابة الدفع. والنتيجة أن التاجر لا يحصل على كامل المبلغ، بل أقل بقليل بعد خصم هذه الرسوم.
+
+📄 **[اقرأ المقال](guides/payment-fintech/payment-fees-explained.md)**
+
+
 
 ---
 
