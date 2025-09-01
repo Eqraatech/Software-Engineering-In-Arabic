@@ -74,6 +74,7 @@
   - [Luhn Algorithm Explained](#luhn-algorithm-explained)
   - [3DS Challenge in Online Payments](#3ds-challenge-in-online-payments)
   - [Payment Fees Explained](#payment-fees-explained)
+  - [Payment Gateway Integrations](#payment-gateway-integrations)
 - [Software Architecture](#software-architecture)
   - [CQRS Architecture Pattern](#cqrs-architecture-pattern)
   - [Layered Architecture](#layered-architecture)
@@ -527,7 +528,12 @@
 
 📄 **[اقرأ المقال](guides/payment-fintech/payment-fees-explained.md)**
 
+---
 
+### Payment Gateway Integrations
+عند ربط موقعك أو تطبيقك ببوابة دفع لقبول المدفوعات بالبطاقات البنكية، يوجد أكثر من طريقة للربط. اختيار الطريقة المناسبة يؤثر بشكل مباشر على تجربة المستخدم، ومستوى الأمان، والمتطلبات التقنية. فيما يلي شرح لأهم هذه الطرق.
+
+📄 **[اقرأ المقال](guides/payment-fintech/payment-gateway-integrations.md)**
 
 ---
 
