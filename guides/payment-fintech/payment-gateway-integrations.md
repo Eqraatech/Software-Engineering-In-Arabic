@@ -9,7 +9,7 @@ image: "https://assets.eqraatech.com/guides/payment-gateway-integrations.png"
 author: "mhdbassiouny"
 ---
 
-<img src="https://assets.eqraatech.com/guides/3dspayment-gateway-integrations.png" alt="Payment Gateway Integrations" ondragstart="return false;" oncontextmenu="return false;" style="display: block; margin: 2rem auto; border-radius: 1rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);" />
+<img src="https://assets.eqraatech.com/guides/payment-gateway-integrations.png" alt="Payment Gateway Integrations" ondragstart="return false;" oncontextmenu="return false;" style="display: block; margin: 2rem auto; border-radius: 1rem; box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);" />
 
 عند ربط موقعك أو تطبيقك ببوابة دفع لقبول المدفوعات بالبطاقات البنكية، يوجد أكثر من طريقة للربط. اختيار الطريقة المناسبة يؤثر بشكل مباشر على تجربة المستخدم، ومستوى الأمان، والمتطلبات التقنية. فيما يلي شرح لأهم هذه الطرق.
 
